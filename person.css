@@ -1,11 +1,12 @@
 #person-content {
-        max-height: 580px;
-        overflow-y: auto;
-        padding: 2rem;
-        border: 1px solid #dee2e6;
-        border-radius: 0.75rem;
-        background-color: #f8f9fa;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    max-width: 100%; 
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 2rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.75rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 section#main-part {
@@ -17,6 +18,9 @@ section#main-part img {
     height: 100%;
 }
 
+section{
+    margin-bottom: 10px;
+}
 .carousel-caption {
     display: inline-block;
     background: rgba(0, 0, 0, 0.6);
