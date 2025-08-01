@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-image: url(https://ssafy-embedded-pjt.mincodinglab.com//14/pjt2/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablet-container {
+    width: 1480px;
+    aspect-ratio: 16 / 9;
+    background-image: url(https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/images/tablet.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-width: 875px;
+}
+
+.tablet-wrapper {
+	position: absolute;
+	width: 82%;
+	height: 94%;
+	top: 3.5%;
+	left: 9.0%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.tablet-header {
+	height: 4%;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	background-color: rgba(166, 166, 196, 0.25);
+	z-index: 10;
+}
+
+.tablet-content {
+	flex: 1;
+	overflow-y: auto;
+	display: flex;
+	border-radius: 13px;
+}
+
+/* left panel */
+.left-panel {
+	flex: 0.9;
+	background: linear-gradient(rgb(80, 103, 122), rgb(28, 29, 33));
+	color: white;
+	padding: 10px;
+	position: relative;
+}
+
+.car-wrapper {
+	position: relative;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.car {
+	width: 100%;
+	display: block;
+	position: relative;
+	z-index: 2;
+	opacity: 0.6;
+}
+
+/* right panel */
+.right-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.map-image {
+    background-image: url("./images/background_map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 8;
+    touch-action: none;
+    z-index: 1;
+}
+
+.app-item {
+    background-color: #574848;
+    border: 1px solid rgba(80, 80, 80, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 2px 3px 6px rgba(80, 80, 80, 0.3);
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    flex: 2;
+    z-index: 2;
+}
+
+.app-item:hover {
+	opacity: 0.7;
+}
+
+.app-item:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mypage-container {
+    background-color: rgb(68, 73, 73);
+}
+
+.mypage-icon {
+    background-color: rgba(71, 65, 65, 0);
+    width: 30px;
+    height: 30px;
+}
+
+
+/* footer */
+.footer-item {
+	margin-left: 40px;
+}
+
+.footer-item:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.footer-item>.lucide-icon {
+	width: 28px;
+	height: 28px;
+}
