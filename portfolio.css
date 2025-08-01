@@ -103,40 +103,37 @@ main #person-content{
 }
 
 
-
-/* Skill Stack */
-table {
-  width: 100%;
-  margin: 0 auto;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 12px 20px;  /* 상하 12px, 좌우 20px 패딩 */
-  text-align: center;
-}
-
-th {
-  background-color: #f8f9fa;
-}
-
-td {
-  background-color: #ffffff;
-}
-
-
-
-
-
 /* footer */
+
+.footer-item {
+    width:50px;
+    display: flex;
+    justify-content: center;
+}
+.main-icon > img {
+    width: 32px;
+    height: 32px;
+    
+}
+
 .main-icon {
     opacity: 0.5;
     position: absolute;
     left: 20px;
     margin-left: 0 !important;
+
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    flex: 2;
+    z-index: 2;
 }
 
-.main-icon>img {
-    width: 32px;
-    height: 32px;
+.app-item:hover {
+	opacity: 0.7;
+}
+
+.app-item:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 3px rgba(214, 19, 19, 0.2);
 }
