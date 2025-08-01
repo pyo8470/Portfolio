@@ -1,38 +1,67 @@
-<link rel="stylesheet" href="./person.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="./person.css">
+
+    <style>
+        #person-content {
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 2rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.75rem;
+            background-color: #f8f9fa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
 
 
+
+<!-- main-part 섹션 -->
 <section id="main-part" class="mb-5">
     <div class="contents-wrapper">
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner rounded shadow">
-
+            <div class="carousel-inner rounded shadow"> <!-- 여기에 높이 고정 -->
                 <!-- 슬라이드 1 -->
-                <div class="carousel-item active position-relative">
-                     <img class="d-block w-100 h-100" src="https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/portfolio/images/main1.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="text-white fw-bold">윤표의 포트폴리오</h1>
+                <div class="carousel-item active position-relative"> <!-- 자식 요소도 100% -->
+                    <img class="d-block w-100"
+                        src="https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/portfolio/images/main1.jpg"
+                        alt="슬라이드1">
+                    <div class="carousel-caption d-none d-md-block h-50">
+                        <h1 class="text-white fw-bold  m-0">저는 SSAFY 임베디드반 출신 개발자<br>홍윤표 입니다.</h1>
                     </div>
                 </div>
 
-                <!-- 슬라이드 2 -->
+                <!-- 나머지 슬라이드도 동일한 구조 -->
                 <div class="carousel-item position-relative">
-                    <img class="d-block w-100" src="https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/portfolio/images/main2.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="text-white fw-bold">임베디드 시스템 개발자</h1>
+                    <img class="d-block w-100"
+                        src="https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/portfolio/images/main2.jpg"
+                        alt="슬라이드2">
+                    <div class="carousel-caption d-none d-md-block h-50">
+                        <h1 class="text-white fw-bold  m-0">저는 배우는 것을 좋아합니다.<br>그리고 개발을 사랑합니다.
+                        </h1>
                     </div>
                 </div>
 
-                <!-- 슬라이드 3 -->
                 <div class="carousel-item position-relative">
-                     <img class="d-block w-100" src="https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/portfolio/images/main3.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="text-white fw-bold">함께 성장하는 개발자</h1>
+                    <img class="d-block w-100"
+                        src="https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/portfolio/images/main3.jpg"
+                        alt="슬라이드3">
+                    <div class="carousel-caption d-none d-md-block h-50">
+                        <h1 class="text-white fw-bold m-0">선배들과 좋은 관계 속에서, <br>도움이 되고 싶습니다. <br>감사합니다.</h1>
                     </div>
                 </div>
 
             </div>
 
-            <!-- 좌우 이동 버튼 -->
+            <!-- 컨트롤 버튼 -->
             <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">이전</span>
@@ -44,6 +73,7 @@
         </div>
     </div>
 </section>
+
 
 
 <section id="about-part">
@@ -61,11 +91,61 @@
 
 </section>
 
-<section id="stack-part">
-    <div class="section-title stack">Stack</div>
-    <div class="contents-wrapper">
-        <p>React, STM32, Docker 등</p>
-    </div>
+<section id="stack-part" class="mb-5">
+    <h2 class="text-dark">Stack</h2>
+    <p>사용 기술 스택</p>
+    <div class="hl bg-dark p-4 text-white w-100 text-center">Skill Stack</div>
+
+    <table class="table w-100">
+        <thead>
+            <tr>
+                <th scope="col">분야</th>
+                <th scope="col">분류</th>
+                <th scope="col">스택</th>
+                <th scope="col">Level</th>
+                <th scope="col">근거</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 분야 1 -->
+            <tr>
+                <th scope="row" rowspan="3" class="align-middle">WEB</th> <!-- rowspan: 행 개수-->
+                <td rowspan="3" class="align-middle">Front end</td>
+                <td>HTML/CSS</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>웹페이지 클론코딩 가능</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td>⭐⭐⭐</td>
+                <td>Bootstrap5 기준 Document 참고하여 개발 가능</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>JavaScript쯤은 기본이죠</td>
+            </tr>
+
+            <!-- 분야 2 -->
+            <tr>
+                <th scope="row" rowspan="3" class="align-middle">Embeded</th>
+                <td rowspan="3" class="align-middle" td>아무거나</td>
+                <td>C</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>코딩테스트쯤 C로 통과 가능</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td>⭐⭐⭐</td>
+                <td>Bootstrap5 기준 Document 참고하여 개발 가능</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>JavaScript쯤은 기본이죠</td>
+            </tr>
+        </tbody>
+    </table>
 
 </section>
 

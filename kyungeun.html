@@ -1,59 +1,104 @@
-<style>
-#person-content {
-  max-height: 600px;       /* 원하는 높이로 고정 */
-  overflow-y: auto;        /* 내부 스크롤 가능하게 */
-  padding: 2rem;
-  border: 1px solid #dee2e6;
-  border-radius: 0.75rem;
-  background-color: #f8f9fa;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="portfolio.css">
 
-<section id="main-part" class="mb-5">
-    <h2 class="text-primary">Main</h2>
-    <p>메인 소개 내용입니다.</p>
-</section>
+    <style>
+        #person-content {
+        max-height: 600px;
+        overflow-y: auto;
+        padding: 2rem;
+        border: 1px solid #dee2e6;
+        border-radius: 0.75rem;
+        background-color: #f8f9fa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <section id="main-part" class="mb-5">
+        <h2 class="text-dark">Main</h2>
+        <p>메인 소개 내용입니다.</p>
+    </section>
 
-<section id="about-part" class="mb-5">
-    <h2 class="text-primary">About</h2>
-    <p>자기소개 및 경력</p>
-</section>
+    <section id="about-part" class="mb-5">
+        <h2 class="text-dark">About</h2>
+        <p>자기소개 및 경력</p>
+    </section>
 
-<section id="language-part" class="mb-5">
-    <h2 class="text-primary">Skill</h2>
-    <p>C/C++, Python 등</p>
-</section>
+    <section id="language-part" class="mb-5">
+        <h2 class="text-dark">Skill</h2>
+        <p>C/C++, Python 등</p>
+    </section>
 
-<section id="stack-part" class="mb-5">
-    <h2 class="text-primary">Stack</h2>
-    <p>사용 기술 스택</p>
-</section>
+    <section id="stack-part" class="mb-5">
+        <h2 class="text-dark">Stack</h2>
+        <p>사용 기술 스택</p>
+        <div class="hl bg-dark p-4 text-white w-100 text-center">Skill Stack</div>
 
-<section id="to-be-part" class="mb-5">
-    <h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p>
-    <h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p><h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p>
-</section>
+        <table class="table w-100">
+            <thead>
+            <tr>
+                <th scope="col">분야</th>
+                <th scope="col">분류</th>
+                <th scope="col">스택</th>
+                <th scope="col">Level</th>
+                <th scope="col">근거</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- 분야 1 -->
+            <tr>
+                <th scope="row" rowspan="3" class="align-middle">WEB</th> <!-- rowspan: 행 개수-->
+                <td rowspan="3" class="align-middle">Front end</td>
+                <td>HTML/CSS</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>웹페이지 클론코딩 가능</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td>⭐⭐⭐</td>
+                <td>Bootstrap5 기준 Document 참고하여 개발 가능</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>JavaScript쯤은 기본이죠</td>
+            </tr>
+
+            <!-- 분야 2 -->
+            <tr>
+                <th scope="row" rowspan="3" class="align-middle">Embeded</th>
+                <td rowspan="3" class="align-middle"td>아무거나</td>
+                <td>C</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>코딩테스트쯤 C로 통과 가능</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td>⭐⭐⭐</td>
+                <td>Bootstrap5 기준 Document 참고하여 개발 가능</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>JavaScript쯤은 기본이죠</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+
+    <section id="to-be-part" class="mb-5">
+        <h2 class="text-dark">Closing</h2>
+        <p>마무리 인사</p>
+    </section>
+
+</body>
+</html>
