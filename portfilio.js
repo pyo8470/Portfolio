@@ -54,3 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+const appItemMypage = document.querySelector('.go-to-main-icon');
+
+appItemMypage.addEventListener("click", function(){
+	location.href="./index.html"
+})
