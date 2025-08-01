@@ -1,0 +1,107 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-image: url(https://ssafy-embedded-pjt.mincodinglab.com//14/pjt2/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablet-container {
+    width: 1480px;
+    aspect-ratio: 16 / 9;
+    background-image: url(https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/images/tablet.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-width: 875px;
+}
+
+.tablet-wrapper {
+    position: absolute;
+    width: 82%;
+    height: 94%;
+    top: 3.5%;
+    left: 9.0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel {
+  max-height: 40px;     /* nav 높이에 맞게 제한 */
+  overflow: hidden;
+  display: inline-block;
+}
+
+.tablet-content {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    border-radius: 13px;
+}
+
+/* nav*/
+
+
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* 추가할 CSS */
+.navbar .carousel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 50px;
+  max-width: 200px;
+  padding: 0 8px;
+}
+
+.navbar .carousel-item h6 {
+  font-size: 14px;       /* 글자 작게 */
+  margin: 0;             /* 기본 여백 제거 */
+  line-height: 1;        /* 줄간격 최소화 */
+}
+
+/**/
+
+.person-content {
+    display: none;
+}
+
+.person-content.active {
+    display: block;
+}
+
+
+
+
+
+
+/* footer */
+.main-icon {
+    opacity: 0.5;
+    position: absolute;
+    left: 20px;
+    margin-left: 0 !important;
+}
+
+.main-icon>img {
+    width: 32px;
+    height: 32px;
+}
