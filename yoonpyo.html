@@ -8,17 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
     <link rel="stylesheet" href="./person.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <style>
-        #person-content {
-            max-height: 600px;
-            overflow-y: auto;
-            padding: 2rem;
-            border: 1px solid #dee2e6;
-            border-radius: 0.75rem;
-            background-color: #f8f9fa;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        }
+        
     </style>
 </head>
 
@@ -76,26 +69,79 @@
 
 
 
-<section id="about-part">
-    <div class="section-title about">About</div>
-    <div class="contents-wrapper">
-        <p>자기소개 및 경력</p>
+<section id="about-part" class="bg-light pt-5">
+    <div class="hl bg-dark p-4 text-white w-100 text-center">
+        ABOUT ME
     </div>
+    <div class="card mx-auto mt-4 bg-dark" style="width: 18rem;">
+        <img src="./images/yoonpyo.png" class="card-img-top w-75 m-auto pt-3 rounded-circle" alt="...">
+        <div class="card-body text-center text-white">
+            <h5 class="card-title h3">홍윤표</h5>
+            <p class="card-text ">
+                IoT Developer<br>(Web + Embedded)
+            </p>
+        </div>
+    </div>
+    <div class="mt-5 text-center">
+        안녕하세요. 언제나 달려가는 개발자 홍윤표 입니다.
+        <br>
+        함께 일하시고 싶으시다면 언제든 연락주셔도 됩니다.
+    </div>
+    <ul class="list-group list-group-flush w-50 m-auto">
+    </ul>
 </section>
+<section id="language-part" class="mb-5">
+    <div class="hl bg-dark p-4 text-white w-100 text-center">Language Skill</div>
 
-<section id="language-part">
-    <div class="section-title skill">Skill</div>
-    <div class="contents-wrapper">
-        <p>C/C++, Python, JavaScript</p>
-    </div>
+    <ul class="w-75 m-auto mt-5 skill-list">
+        <!-- 언어 1 -->
+        <li class="list-group-item d-flex align-items-center p-4">
+            <div class="w-25">C</div>
+            <div class="progress w-50 m-auto">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                </div>
+            </div>
+            <div class="w-25 text-center">95%</div>
+        </li>
 
+        <!-- 언어 2 -->
+        <li class="list-group-item d-flex align-items-center p-4">
+            <div class="w-25">Python</div>
+            <div class="progress w-50 m-auto">
+                <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                </div>
+            </div>
+            <div class="w-25 text-center">90%</div>
+        </li>
+
+        <!-- 언어 3 -->
+        <li class="list-group-item d-flex align-items-center p-4">
+            <div class="w-25">JavaScript</div>
+            <div class="progress w-50 m-auto">
+                <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
+                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                </div>
+            </div>
+            <div class="w-25 text-center">70%</div>
+        </li>
+
+        <!-- 언어 4 -->
+        <li class="list-group-item d-flex align-items-center p-4">
+            <div class="w-25">Java</div>
+            <div class="progress w-50 m-auto">
+                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar"
+                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                </div>
+            </div>
+            <div class="w-25 text-center">70%</div>
+        </li>
+    </ul>
 </section>
 
 <section id="stack-part" class="mb-5">
-    <h2 class="text-dark">Stack</h2>
-    <p>사용 기술 스택</p>
     <div class="hl bg-dark p-4 text-white w-100 text-center">Skill Stack</div>
-
     <table class="table w-100">
         <thead>
             <tr>
@@ -149,9 +195,24 @@
 
 </section>
 
-<section id="to-be-part">
-    <div class="section-title closing">Closing</div>
-    <div class="contents-wrapper">
-        <p>감사합니다. 함께 성장하는 개발자가 되겠습니다.</p>
+<section id="to-be-part" class="mt-5 pt-5" style="min-height: 50vh;">
+    <div class="hl bg-dark p-4 text-white w-100 text-center">
+        Closing
+    </div>
+
+    <div class="card mb-3 mt-5 text-center">
+        <img src="./images/closing.jpg" class="card-img-top w-50 m-auto mt-5" alt="...">
+        <div class="card-body">
+            <h4 class="card-title">저는 무한한 발전 가능성을 가지고 있습니다.</h4>
+            <p class="card-text">
+                <br>
+                현재 Moms Touch는 열리지 않았습니다. 그리고 헝그리 정신으로 웹 개발을 합니다.<br><br>
+                지금은 잠이 부족하지만, 개발은 항상 재미있기에 참을 수 있습니다.<br><br>
+                그리고 저는 웹 개발만큼, 치킨과 맥주를 좋아합니다. 많이 좋아합니다.<br><br>
+                만약 제가 필요하시다면, 언제든 주저 없이. 멋진 삶을 살고 싶습니다.<br><br>
+                귀사에 도움이 될 것을 약속 드립니다. 감사합니다.<br><br>
+                — 홍윤표 — 
+            </p>
+        </div>
     </div>
 </section>

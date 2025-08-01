@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -14,9 +15,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: 'Noto Sans KR', sans-serif;
 }
+
 
 .tablet-container {
     width: 1480px;
@@ -38,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 13px;
+    
 }
 
 header div.carousel {
@@ -48,12 +50,17 @@ header div.carousel {
 }
 
 .table-content {
+    display: flex;
     flex: 1;
     overflow-y: auto;
     display: flex;
+    height: 100%;
     border-radius: 13px;
 }
-
+main #person-content{
+    height: 90%;
+    overflow: scroll; /* 수직 스크롤은 내부에서만 */
+}
 /* nav*/
 
 
