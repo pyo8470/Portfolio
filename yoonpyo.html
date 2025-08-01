@@ -1,36 +1,77 @@
-<style>
-#person-content {
-  max-height: 600px;       /* 원하는 높이로 고정 */
-  overflow-y: auto;        /* 내부 스크롤 가능하게 */
-  padding: 2rem;
-  border: 1px solid #dee2e6;
-  border-radius: 0.75rem;
-  background-color: #f8f9fa;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-</style>
+<link rel="stylesheet" href="./person.css">
+
 
 <section id="main-part" class="mb-5">
-    <h2 class="text-primary">Main</h2>
-    <p>메인 소개 내용입니다.</p>
+    <div class="contents-wrapper">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+
+                <!-- 슬라이드 1 -->
+                <div class="carousel-item active position-relative">
+                     <img class="d-block w-100 h-100" src="https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/portfolio/images/main1.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-white fw-bold">윤표의 포트폴리오</h1>
+                    </div>
+                </div>
+
+                <!-- 슬라이드 2 -->
+                <div class="carousel-item position-relative">
+                    <img class="d-block w-100" src="https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/portfolio/images/main2.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-white fw-bold">임베디드 시스템 개발자</h1>
+                    </div>
+                </div>
+
+                <!-- 슬라이드 3 -->
+                <div class="carousel-item position-relative">
+                     <img class="d-block w-100" src="https://ssafy-embedded-pjt.mincodinglab.com/14/pjt2/portfolio/images/main3.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-white fw-bold">함께 성장하는 개발자</h1>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 좌우 이동 버튼 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">이전</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">다음</span>
+            </button>
+        </div>
+    </div>
 </section>
 
-<section id="about-part" class="mb-5">
-    <h2 class="text-primary">About</h2>
-    <p>자기소개 및 경력</p>
+
+<section id="about-part">
+    <div class="section-title about">About</div>
+    <div class="contents-wrapper">
+        <p>자기소개 및 경력</p>
+    </div>
 </section>
 
-<section id="language-part" class="mb-5">
-    <h2 class="text-primary">Skill</h2>
-    <p>C/C++, Python 등</p>
+<section id="language-part">
+    <div class="section-title skill">Skill</div>
+    <div class="contents-wrapper">
+        <p>C/C++, Python, JavaScript</p>
+    </div>
+
 </section>
 
-<section id="stack-part" class="mb-5">
-    <h2 class="text-primary">Stack</h2>
-    <p>사용 기술 스택</p>
+<section id="stack-part">
+    <div class="section-title stack">Stack</div>
+    <div class="contents-wrapper">
+        <p>React, STM32, Docker 등</p>
+    </div>
+
 </section>
 
-<section id="to-be-part" class="mb-5">
-    <h2 class="text-primary">Closing</h2>
-    <p>마무리 인사</p>
+<section id="to-be-part">
+    <div class="section-title closing">Closing</div>
+    <div class="contents-wrapper">
+        <p>감사합니다. 함께 성장하는 개발자가 되겠습니다.</p>
+    </div>
 </section>
